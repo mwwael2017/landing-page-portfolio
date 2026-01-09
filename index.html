@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen | Modern Digital Solutions</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="NextGen provides cutting-edge digital solutions to elevate your brand. Experience high-performance design and scalable growth tools.">
+    <meta name="keywords" content="digital agency, web design, growth tools, startup solutions, modern ui">
+    <meta name="author" content="NextGen">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/">
+    <meta property="og:title" content="NextGen | Modern Digital Solutions">
+    <meta property="og:description" content="Elevate your brand with cutting-edge strategies and immersive design.">
+    <meta property="og:image" content="assets/hero-bg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="NextGen | Modern Digital Solutions">
+    <meta property="twitter:description"
+        content="Elevate your brand with cutting-edge strategies and immersive design.">
+    <meta property="twitter:image" content="assets/hero-bg.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">NextGen.</a>
+            <nav class="nav desktop-nav">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme" class="theme-toggle">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display:none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#cta" class="btn btn-primary btn-sm">Get Started</a>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay">
+            <nav class="mobile-nav">
+                <a href="#features" class="mobile-nav-link">Features</a>
+                <a href="#pricing" class="mobile-nav-link">Pricing</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <div class="mobile-nav-actions">
+                    <a href="#cta" class="btn btn-primary">Get Started</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-on-scroll">Experience the <span class="gradient-text">Future</span> of
+                        Digital Growth</h1>
+                    <p class="hero-subtitle animate-on-scroll stagger-1">Elevate your brand with cutting-edge strategies
+                        and
+                        immersive design. We build tools that scale with your vision.</p>
+                    <div class="hero-buttons animate-on-scroll stagger-2">
+                        <a href="#cta" class="btn btn-primary">Start Your Journey</a>
+                        <a href="#features" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper animate-on-scroll stagger-3">
+                    <!-- Hero image: Priority load (no lazy) -->
+                    <img src="assets/hero-bg.png" alt="Abstract 3D glass shapes representing innovation"
+                        class="hero-image">
+                    <div class="glow-effect"></div>
+                    <!-- Secondary decorative orb -->
+                    <div class="glow-orb"
+                        style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: cyan; filter: blur(40px); opacity: 0.4; border-radius: 50%; z-index: -2;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section features">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Why Choose Us?</h2>
+                    <p class="section-subtitle">We deliver excellence through innovation.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll stagger-1">
+                        <img src="assets/feature-speed.png" alt="Icon representing fast performance"
+                            class="feature-icon" loading="lazy">
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-desc">Optimized performance that keeps your users engaged without delay.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll stagger-2">
+                        <img src="assets/feature-design.png" alt="Icon representing premium design" class="feature-icon"
+                            loading="lazy">
+                        <h3 class="feature-title">Premium Design</h3>
+                        <p class="feature-desc">Aesthetics that capture attention and communicate value instantly.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll stagger-3">
+                        <img src="assets/feature-growth.png" alt="Icon representing scalable growth"
+                            class="feature-icon" loading="lazy">
+                        <h3 class="feature-title">Scalable Growth</h3>
+                        <p class="feature-desc">Built-in tools to help you expand your reach and revenue effortlessly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="section how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">Simple steps to massive impact.</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Connect</h3>
+                            <p>Sign up and integrate your existing innovative tools in seconds.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Configure</h3>
+                            <p>Customize your dashboard and set your growth parameters.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Launch</h3>
+                            <p>Go live and watch your metrics climb with real-time analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section testimonials">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Trusted by Visionaries</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll stagger-1">
+                        <div class="testimonial-content">
+                            "NextGen totally transformed our workflow. The speed and design are unmatched."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/avatar-1.png" alt="Profile picture of Sarah Jenkins" class="author-avatar"
+                                loading="lazy">
+                            <div class="author-info">
+                                <h4>Sarah Jenkins</h4>
+                                <span>Senior Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll stagger-2">
+                        <div class="testimonial-content">
+                            "I've never seen a platform this intuitive. It's like it reads my mind."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/avatar-2.png" alt="Profile picture of David Ross" class="author-avatar"
+                                loading="lazy">
+                            <div class="author-info">
+                                <h4>David Ross</h4>
+                                <span>Creative Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll stagger-3">
+                        <div class="testimonial-content">
+                            "Our growth skyrocketed within weeks. Absolutely essential for startups."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/avatar-3.png" alt="Profile picture of Michael Chen" class="author-avatar"
+                                loading="lazy">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Founder, TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section pricing">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Simple Pricing</h2>
+                    <p class="section-subtitle">Choose the plan that fits your scale.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card animate-on-scroll stagger-1">
+                        <h3 class="plan-name">Starter</h3>
+                        <div class="plan-price">$29<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li>5 Projects</li>
+                            <li>Basic Analytics</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary btn-sm">Get Started</a>
+                    </div>
+                    <div class="pricing-card featured animate-on-scroll stagger-2">
+                        <div class="popular-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="none">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                            Most Popular
+                        </div>
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">$99<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li>Unlimited Projects</li>
+                            <li>Advanced Analytics</li>
+                            <li>Priority Support</li>
+                            <li>Custom Domain</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-sm">Get Started</a>
+                    </div>
+                    <div class="pricing-card animate-on-scroll stagger-3">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">Custom</div>
+                        <ul class="plan-features">
+                            <li>Dedicated Account Manager</li>
+                            <li>Custom Integrations</li>
+                            <li>SLA Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary btn-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrations Section -->
+        <section id="integrations" class="section integrations">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Seamless Integrations</h2>
+                    <p class="section-subtitle">Connect with the tools you already use.</p>
+                </div>
+                <div class="integrations-grid animate-on-scroll">
+                    <!-- Slack -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                        </div>
+                        <span>Slack</span>
+                    </div>
+                    <!-- Notion -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <span>Notion</span>
+                    </div>
+                    <!-- Figma -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                                <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                                <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                                <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                                <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                            </svg>
+                        </div>
+                        <span>Figma</span>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </div>
+                        <span>GitHub</span>
+                    </div>
+                    <!-- Zapier -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <span>Zapier</span>
+                    </div>
+                    <!-- HubSpot -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <span>HubSpot</span>
+                    </div>
+                    <!-- Salesforce -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <span>Salesforce</span>
+                    </div>
+                    <!-- Intercom -->
+                    <div class="integration-item">
+                        <div class="integration-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <span>Intercom</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container about-container">
+                <div class="about-content animate-on-scroll">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">About NextGen</h2>
+                    <p class="about-text">We are a team of visionaries, developers, and designers passionate about
+                        building the future of digital interaction. Our mission is to empower businesses with tools that
+                        are as beautiful as they are functional.</p>
+                    <p class="about-text">Founded in 2024, we've helped over 500 startups scale their operations and
+                        redefine their brand identity.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual animate-on-scroll stagger-1">
+                    <img src="./assets/about.png" alt="NextGen team illustration" class="about-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="section careers">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Join Our Team</h2>
+                    <p class="section-subtitle">Help us shape the future.</p>
+                </div>
+                <div class="careers-list animate-on-scroll">
+                    <!-- Job 1 -->
+                    <div class="career-item">
+                        <div class="career-header">
+                            <h3>Senior Frontend Engineer</h3>
+                            <div class="career-tags">
+                                <span class="tag">Remote</span>
+                                <span class="tag">Full-time</span>
+                            </div>
+                        </div>
+                        <p class="career-description">Lead our frontend team in building immersive web experiences using
+                            the latest technologies.</p>
+                        <a href="#" class="btn btn-secondary btn-sm">Apply Now</a>
+                    </div>
+                    <!-- Job 2 -->
+                    <div class="career-item">
+                        <div class="career-header">
+                            <h3>Product Designer</h3>
+                            <div class="career-tags">
+                                <span class="tag">New York</span>
+                                <span class="tag">Hybrid</span>
+                            </div>
+                        </div>
+                        <p class="career-description">Shape the visual identity of our products and ensure a seamless
+                            user experience.</p>
+                        <a href="#" class="btn btn-secondary btn-sm">Apply Now</a>
+                    </div>
+                    <!-- Job 3 -->
+                    <div class="career-item">
+                        <div class="career-header">
+                            <h3>Growth Marketing Manager</h3>
+                            <div class="career-tags">
+                                <span class="tag">London</span>
+                                <span class="tag">On-site</span>
+                            </div>
+                        </div>
+                        <p class="career-description">Drive our global growth strategy and help us reach new markets.
+                        </p>
+                        <a href="#" class="btn btn-secondary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container contact-container">
+                <div class="contact-content-wrapper">
+                    <!-- Left Column: Info -->
+                    <div class="contact-info animate-on-scroll">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Get in Touch</h2>
+                        <p class="section-subtitle" style="text-align: left; margin-bottom: 2rem;">Have a question? We'd
+                            love to hear from you.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <span>hello@nextgen.com</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <span>123 Innovation Dr, Tech City</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <form class="contact-form animate-on-scroll stagger-1" novalidate>
+                        <div class="form-group floating-label">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group floating-label">
+                            <textarea id="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="margin-left: 8px;">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="section cta">
+            <div class="container cta-container animate-on-scroll">
+                <div class="cta-text-content">
+                    <h2 class="cta-title">Ready to define the future?</h2>
+                    <p class="cta-text">Join thousands of others who are building tomorrow, today.</p>
+                </div>
+                <div class="cta-form-wrapper animate-on-scroll stagger-1">
+                    <form class="cta-form" novalidate>
+                        <div class="input-group-wrapper">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Get Started</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">NextGen.</a>
+                <p>Designing the digital future.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Product</h4>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Integrations</a>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 | Landing Page by Mohamed Wael</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
